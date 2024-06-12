@@ -1,6 +1,6 @@
 [package]
 name = "unsignedvarint"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Pol Valletbó Montfort <polvalletbo@gmail.com>"]
 description = "Simple implementation for unsigned varints."
