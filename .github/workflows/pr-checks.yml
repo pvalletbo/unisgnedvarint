@@ -1,0 +1,27 @@
+name: PR checks
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        with:
+          ref: ${{ github.head_ref }}
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+      - name: Cargo fmt
+        run: |
+          cargo fmt
+          git config --global user.name 'cargofmt robot'
+          git diff --quiet && git diff --staged --quiet || git commit -am "chore: rustfmt"
+          git push
+      - name: Cargo test
+        run: |
+          cargo test
