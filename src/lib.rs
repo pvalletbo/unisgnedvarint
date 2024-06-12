@@ -11,7 +11,7 @@ impl BinRead for UnsignedVarint {
         _: Endian,
         _: Self::Args<'_>,
     ) -> BinResult<Self> {
-                        let mut number = 0;
+        let mut number = 0;
         // used to track the number of bits that need to be shifted left to place the number from
         // each byte correctly. The last byte we read will be the most significant one becasuse of
         // how the serialization process works. The least significant bytes are encoded first.
