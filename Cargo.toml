@@ -2,6 +2,12 @@
 name = "unsignedvarint"
 version = "0.1.0"
 edition = "2021"
+authors = ["Pol Valletbó Montfort <polvalletbo@gmail.com>"]
+description = "Simple implementation for unsigned varints."
+readme = "README.md"
+repository = "https://github.com/pvalletbo/unsignedvarint"
+license = "MIT"
+keywords = ["varint"]
 
 [dependencies]
 binrw = "0.14.0"
