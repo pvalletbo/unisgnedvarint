@@ -11,11 +11,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - derive expected traits ([#3](https://github.com/pvalletbo/unsignedvarint/pull/3))
 - release-plz action ([#1](https://github.com/pvalletbo/unsignedvarint/pull/1))
-
-### Fixed
-- remove Cargo.lock after test
-- remove cargo.lock from gitignore
-
-### Other
-- add PR checks ([#5](https://github.com/pvalletbo/unsignedvarint/pull/5))
-- Revert "fix: remove cargo.lock from gitignore"
