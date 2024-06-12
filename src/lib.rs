@@ -1,4 +1,6 @@
 use binrw::{BinRead, BinResult, BinWrite, Endian};
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
 pub struct UnsignedVarint(pub u64);
 
 impl BinRead for UnsignedVarint {
