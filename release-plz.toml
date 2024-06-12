@@ -1,0 +1,4 @@
+[workspace]
+semver_check = true
+publish_timeout = "10m"
+pr_labels = ["release"]
