@@ -1,2 +1,3 @@
-# unisgnedvarint
-Simple unsigned varint implementation
+# Unsignedvarint
+
+Simple unsigned varint implementation in Rust.
